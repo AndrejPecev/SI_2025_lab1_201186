@@ -64,7 +64,14 @@ class TaskManager {
 
     // 1. Remove a task by name
     public void removeTask(String name) {
-        // TODO: Implement removal logic
+        tasks.stream().filter(
+                task -> task.getName().equals(name)
+        ).findFirst().ifPresent(
+                task -> {
+                    tasks.remove(task);
+                    System.out.printf("Task %s removed%n", name);
+                }
+        );
     }
 
     // 2. Find all completed tasks
