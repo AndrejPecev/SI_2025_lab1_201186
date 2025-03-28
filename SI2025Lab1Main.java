@@ -103,7 +103,11 @@ class TaskManager {
 
     // 8. Mark a task as completed by name
     public void markTaskCompleted(String name) {
-        // TODO: Implement completion logic
+        tasks.stream().filter(
+                task -> task.getName().equals(name)
+        ).findFirst().ifPresent(
+                Task::complete
+        );
     }
 
     // 9. Mark all tasks in a category as completed
