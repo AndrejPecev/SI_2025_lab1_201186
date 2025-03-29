@@ -1,0 +1,37 @@
+Commands for starting part in order:
+1. mkdir SI_2025_lab1_201186
+2. cd SI_2025_lab1_201186
+3. git init
+4. git remote add origin https://github.com/AndrejPecev/SI_2025_lab1_201186.git
+5. echo "Andrej Pecev 201186" > README.md
+6. git add *
+7. git commit -m "Initial commit"
+8. git add SI2025Lab1Main.java
+9. git commit -m "Add starter code"
+10. git push origin master
+
+Commands for first part in order:
+1. git fetch origin
+2. git checkout 1-remove-a-task-by-name
+3. git add .
+4. git commit -m "Implementated function for issue #1"
+5. git push origin 1-remove-a-task-by-name
+- povtoruvanje za issue 7 i 8
+5. git checkout master
+6. git pull origin master
+7. git merge 7-count-tasks-per-category
+8. git push origin master
+9. git log --oneline --graph --all > logs.txt
+10. git add logs.txt 201186.txt
+11. git commit -m "Final commit"
+12. git push origin master
+
+Commands for second part in order:
+1. git clone https://github.com/AndrejPecev/SI_2025_lab1_151020
+2. cd SI_2025_lab1_151020
+3. echo "Andrej Pecev" > 201186.txt
+4. git add 201186.txt
+5. git commit -m "Add file"
+6. git push origin master
+
+zaboraviv da go savenam text dokumentov...
